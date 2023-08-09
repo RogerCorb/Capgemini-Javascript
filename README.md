@@ -1,3 +1,2 @@
-// pasta contendo exercícos do cursp Javascript / Jquery 
-// ministrado pela empresa Capgemini em sua trilha JAVA
-// o curso é muito bom e tenho aprendido muito 
+// pasta contendo exercícos do curso Javascript / Jquery 
+// da trilha JAVA tem agregado bastante para o meu aprendizado global
