@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Evento Alteração</title>
+    <!--JS-->
+   <Script>
+     // função mensagem é acionada no evento de clicar no botão e executa
+     // a função.. o evento é o onclick
+     const mensagem = ()=>{ 
+        //Capturando o valor selecionado de Id cursos
+        const curso = document.getElementById("cursos").value;
+
+        //Exibindo o curso  selecionado em uma POP UP
+        alert(curso);
+     }
+   </Script>
+</head>
+
+<body>
+    <select onchange="mensagem()" id="cursos">
+        <option>Escolha seu curso</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Javascript</option>
+    </select>
+    
+</body>
+
+</html>
