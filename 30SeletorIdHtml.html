@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seletor ID - Html </title>
+    <!--JS-->
+    <Script>
+        const exibirConteudo = ()=>{
+            //obtendo o conteudo valor de id campo
+            const campo = document.getElementById("campo");
+
+            // exibindo o que foi digitado em um popup
+            alert(campo.value);
+
+            // apagando / atribuindo novo valor a id campo
+            // após ser exibido no pop up o que foi digitado
+            // agora estamos apagando o texto digitado no campo input text
+            campo.value="";
+        }
+        const campo = document.getElementById("campo").value;
+    </Script>
+</head>
+
+<body>
+    <input type="text" id="campo">
+    <button onclick="exibirConteudo()">Clique Aqui</button>
+
+</body>
+
+</html>

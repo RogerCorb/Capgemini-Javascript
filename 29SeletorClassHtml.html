@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selecto Classe</title>
+    <!--JS-->
+    <Script>
+        const exibirTexto = () => {
+            // armazena a tag class texto
+            const campo = document.getElementsByClassName("texto")[2];
+            // exibe o conteudo da class capturada 
+            alert(campo.innerHTML);
+        }
+    </Script>
+</head>
+
+<body>
+    <button onClick="exibirTexto()">Clique Aqui</button>
+    <h1 class="texto">Título em H1</h1>
+    <h2 class="texto">Título em H2</h2>
+    <p class="texto">Parágrafo</p>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estilizando CSS no Script</title>
+    <!--JS-->
+    <Script>
+        const acao = ()=>{
+            const texto = document.getElementsByTagName("h1")[0];
+
+            //CSS
+            texto.style.color = "#FF0000";
+            texto.style.fontSize = "20px";
+
+            //Alterando o conteudo
+            texto.innerHTML = "Curso de JavaScript";
+        }
+        
+    </Script>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <button onclick="acao()">Clique Aqui</button>
+
+</body>
+
+</html>

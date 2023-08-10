@@ -8,15 +8,23 @@
    <Script>
      //onKeyUp:Exibe o caractere e depois executa a ação
 
+     //onKeyDown:Executa a ação e depois exibe o caractere 
 
-     //onKeyDown:Executa a ação e depois o caractere 
-     
-     
+     // onKeyPress: Executa a ação e depos exibe o caractere
+     // não tem suporte para teclas f1..a f12 , ctrl e eclas especiais
+     const exibir = ()=>{
+      //obtemos o valor do campo texto da entrada input 
+      // armazenamos na variavel campo este valor digitado
+       const campo = document.getElementById("campo").value;
+
+      // exibindo em uma pop up
+      alert(campo);
+     }
    </Script>
 </head>
 
 <body>   
-    
+  <input type="text" id="campo" onkeyup="exibir()">    
 </body>
 
 </html>

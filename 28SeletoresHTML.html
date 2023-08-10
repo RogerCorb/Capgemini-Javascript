@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura Base </title>
+    <!--JS-->
+   <Script>
+     const acao = ()=>{
+        //document é um comando HTML e nos permite capturar 
+        // qulquer tag , campo digitado no documento
+        // aqui queremos obter a seleção do primeiro h1 por isso [0]
+        // deve nos retornar para a variavel texto "Proway" string
+        const texto = document.getElementsByTagName("h1")[0];
+
+        //o H1 tem particularidades como tipo da letra,cor da letra,
+        // tamanho da letra e conteudo.. e o que nós queremos é o 
+        // conteúdo de H1 que está em texto, nesse caso vai ser 
+        // exibido "Proway"
+        alert(texto.innerHTML);
+     }
+   </Script>
+</head>
+
+<body>
+    <button onClick="acao()">Selecionar</button>
+    <h1>Proway</h1>
+    <h1>Seletores JS</h1>
+    <h1>Curso Proway</h1>
+</body>
+
+</html>
